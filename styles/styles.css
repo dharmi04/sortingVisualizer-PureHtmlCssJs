@@ -1,0 +1,29 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+:root{
+    --dark:black;
+    --white:white;
+}
+body{
+    background: var(--dark);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    color:var(--white) ;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2), -5px -5px 15px 5px rgba(255, 255, 255, 0.7);
+    height: 3.5rem;
+}
+.navbar ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
