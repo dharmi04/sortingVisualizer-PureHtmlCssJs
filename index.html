@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="./jsFiles/index.js"></script>
+    <script src="./jsFiles/index.js" defer></script>
   </head>
   <body>
     <div class="main-container">
@@ -24,9 +24,14 @@
         </ul>
       </nav>
     </div>
-    <div class="control_btns">
-             <button id='reset' onclick="reset()">Reset</button>
-       <input type="text" value="" placeholder="Enter number of elements to sort"/>
+    <div class="control_btns page_container
+    ">
+    <div class="elements_insort">
+      <input type="text" name="" id="">
+    </div>
+        <button id='reset' onclick="reset()">Reset</button>
+       <input class="el_input" type="number" value="" placeholder="Enter number"/>
+       <button onclick="startSorting()">Start Sorting</button>
      
     </div>
     <div class="bars_container">
@@ -34,6 +39,6 @@
           <div class="bar" style="height: 100px"></div>
         </div>
     </div>
-    <button onclick="startSorting()">Start Sorting</button>
+    
   </body>
 </html>

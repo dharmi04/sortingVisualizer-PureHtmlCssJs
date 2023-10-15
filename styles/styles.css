@@ -1,9 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+input:focus,input:active{
+    outline: none;
+
+}
 body {
     background-color: #000;
     color: #0ff;
     font-family: Arial, sans-serif;
 }
-
+.page_container{
+    max-width: 80%;
+    margin-inline: auto;
+}
 .container {
     display: flex;
     align-items: flex-end;
@@ -12,7 +25,7 @@ body {
 }
 
 .bar {
-    width: 20px;
+    width: 2em;
     margin: 2px;
     background-color: #0ff;
     transition: height 0.2s;
@@ -60,6 +73,21 @@ body{
 
 
 }
+.control_btns{
+    display: flex;
+    align-items: center;
+    background-attachment: red;
+    justify-content: flex-end;
+    gap: 2em;
+    margin-top: 2em;
+  
+}
+.control_btns input{
+    height: 3em;
+    width: 8em;
+    text-align: center;
+ 
+}
 .bars_container{
    
     display: flex;
@@ -67,3 +95,12 @@ body{
     margin-top: 4em;
 
 }
+ .elements_insort{
+    width: 100%;
+ }
+ .elements_insort input{
+    width: 100%;
+ }
+ .bar p{
+    background-color: red;
+ }
